@@ -2,100 +2,106 @@
 
 ## Executive Summary
 
-Designed an enterprise security governance program for Unidad Web, a cloud services provider supporting more than 5,000 clients.
+Designed an enterprise security governance program for Unidad Web, a cloud services provider supporting more than 5,000 customers across the eastern United States.
 
-The environment includes Windows, UNIX, and Linux systems supporting website hosting, cloud storage, email services, and business applications.
-
-This project focused on strengthening security governance, improving risk management, and supporting compliance requirements.
+The objective was to strengthen operating system security, reduce cyber risk, improve monitoring capabilities, and support compliance requirements across Windows, UNIX, and Linux environments.
 
 ---
 
-## Business Problem
+# Business Overview
 
-Unidad Web faces several cybersecurity risks:
+## Organization
 
-- Ransomware
-- Data breaches
-- Insider threats
-- Service outages
-- Unauthorized access
+Unidad Web provides:
 
-These risks could impact customer data and business operations.
+- Website hosting
+- Email services
+- Content management systems
+- Secure cloud storage
+
+The organization maintains a hybrid infrastructure and manages sensitive customer information requiring strong cybersecurity controls.
 
 ---
 
-## Security Architecture
+# Infrastructure Overview
 
-The environment includes:
+## Systems Environment
+
+### Windows Environment
 
 - 120 Windows 11 Workstations
 - 15 Windows Server 2022 Systems
-- 25 Linux Servers
-- 10 UNIX Servers
-- AWS Cloud Services
-- Microsoft 365
-- VPN Infrastructure
 
-### Network Diagram
+### Linux Environment
+
+- 25 Linux Servers
+- Ubuntu
+- CentOS
+
+### UNIX Environment
+
+- 10 UNIX Servers
+- Solaris
+- AIX
+
+### External Services
+
+- AWS S3
+- Microsoft 365
+- GitHub
+- Third-party APIs
+
+---
+
+# Security Architecture
+
+## Network Diagram
 
 Security-Architecture-Diagram.png
 
----
+### Architecture Components
 
-## Security Controls
+Internet
+↓
+Firewall
+↓
+DMZ
+↓
+Web Servers
+↓
+Internal Network
+↓
+Windows Systems
+Linux Systems
+UNIX Systems
+↓
+VPN Gateway
+↓
+Remote Users
 
-| Control | Purpose |
-|----------|----------|
-| BitLocker | Data Encryption |
-| Windows Defender | Endpoint Protection |
-| Group Policy | Security Administration |
-| Tripwire | File Integrity Monitoring |
-| Wazuh | SIEM Monitoring |
-| Snort | Intrusion Detection |
-| Sysmon | Event Monitoring |
-| MFA | Secure Authentication |
-
----
-
-## Compliance Alignment
-
-- NIST Cybersecurity Framework
-- ISO 27001
-- HIPAA
-- GDPR
-- SOC 2
-
----
-
-## Deliverables
-
-- Security Governance Framework
-- Security Policy Strategy
-- Security Control Matrix
-- Security Architecture Overview
+Cloud Integrations:
+- AWS
+- Microsoft 365
+- GitHub
 
 ---
 
-## Skills Demonstrated
+# Governance Framework
 
-### Governance
-- Security Policy Development
-- Security Program Management
-
-### Risk Management
-- Risk Identification
-- Control Selection
-
-### Compliance
-- NIST Alignment
-- ISO 27001 Alignment
-
-### Security Operations
-- Monitoring Strategy
-- Incident Response Planning
-
----
-
-## Key Outcome
-
-Implemented a governance framework designed to improve security visibility, compliance readiness, and organizational resilience.
+```text
+Security Governance
+        │
+        ▼
+Policies & Standards
+        │
+        ▼
+Security Controls
+        │
+        ▼
+Monitoring & Detection
+        │
+        ▼
+Incident Response
+        │
+        ▼
+Compliance Reporting
