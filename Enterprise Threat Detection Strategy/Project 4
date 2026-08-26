@@ -2,7 +2,8 @@
 
 ## Executive Summary
 
-Designed an enterprise threat detection and monitoring strategy for Unidad Web, a cloud services provider supporting more than 5,000 customers. The strategy uses layered security monitoring across Windows, Linux, UNIX, cloud services, and network infrastructure to improve threat visibility, accelerate incident detection, and reduce organizational risk. 【1-9a6e2a】
+Designed an enterprise threat detection and monitoring strategy for Unidad Web, a cloud services provider supporting more than 5,000 customers. 
+The strategy uses layered security monitoring across Windows, Linux, UNIX, cloud services, and network infrastructure to improve threat visibility, accelerate incident detection, and reduce organizational risk. 
 
 ---
 
@@ -17,7 +18,7 @@ Unidad Web provides:
 - Content Management Systems
 - Secure Cloud Storage
 
-The organization supports healthcare providers, financial institutions, and small businesses that rely on secure and continuous access to sensitive information. 【1-9a6e2a】
+The organization supports healthcare providers, financial institutions, and small businesses that rely on secure and continuous access to sensitive information.
 
 ---
 
@@ -65,7 +66,6 @@ Remote Access
 └── VPN Gateway
 ```
 
-【1-9a6e2a】
 
 ---
 
@@ -156,8 +156,6 @@ Security Alerts
      SOC Team
 ```
 
-【1-9a6e2a】
-
 ---
 
 # Layer 2: Host Monitoring
@@ -195,8 +193,6 @@ Host Activity
       ▼
  Security Alerts
 ```
-
-【1-9a6e2a】
 
 ---
 
@@ -243,7 +239,6 @@ Process Execution
  Security Alerts
 ```
 
-【1-9a6e2a】
 
 ---
 
@@ -291,7 +286,6 @@ Rootkit Activity               Wazuh
 | PowerShell Abuse | ❌ | ❌ | ✅ |
 | Lateral Movement | ❌ | ❌ | ✅ |
 
-【1-9a6e2a】
 
 ---
 
@@ -334,7 +328,6 @@ External Threat Intelligence
  Snort / Wazuh / SOC
 ```
 
-【1-9a6e2a】
 
 ---
 
