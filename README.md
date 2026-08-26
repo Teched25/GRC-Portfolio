@@ -1,3 +1,13 @@
+
+A collection of practical cybersecurity governance, risk, and compliance (GRC) projects for demonstration and learning purposes.
+
+**Welcome to my GRC Portfolio.**  
+My name is **Cinthya Torres**, and I hold a **Master’s in Computer Science with a concentration in Cybersecurity**. I am currently pursuing the **CompTIA Security+** certification to further strengthen my technical foundation and readiness for industry roles.
+
+I am seeking an entry-level opportunity in cybersecurity with a strong focus on **Governance, Risk, and Compliance (GRC)**. This portfolio highlights practical, hands-on projects that demonstrate my understanding of core GRC responsibilities, including **risk management, compliance, policy development, control implementation, and security frameworks**. Each document is crafted to simulate real-world organizational processes and reflect my preparedness to contribute effectively within the cybersecurity governance space.
+
+---
+
 # Cinthya Torres | GRC Portfolio
 
 Cybersecurity Governance, Risk & Compliance Professional
