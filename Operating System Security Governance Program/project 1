@@ -1,0 +1,83 @@
+Operating System Security Governance Program for Unidad Web
+Executive Summary
+
+Developed a security governance program for Unidad Web, a cloud services provider supporting more than 5,000 customers. 
+The project focused on improving security controls, reducing cyber risk, and supporting compliance requirements across Windows, UNIX, and Linux environments.
+
+Business Problem
+
+Unidad Web stores and processes sensitive customer information and faces risks such as:
+
+Ransomware
+Data breaches
+Insider threats
+Service outages
+Unauthorized access
+
+These risks could affect business operations and regulatory compliance.
+
+Project Objectives
+Improve system security
+Establish governance processes
+Strengthen monitoring capabilities
+Support regulatory compliance
+Reduce operational risk
+Environment Overview
+Infrastructure
+120 Windows 11 workstations
+15 Windows Servers
+25 Linux Servers
+10 UNIX Servers
+AWS Cloud Services
+Microsoft 365
+VPN Infrastructure
+Security Architecture
+
+Network diagram:
+
+The environment includes a DMZ, firewall, internal LAN, VPN gateway, and external cloud services.
+
+| Control          | Purpose                     |
+| ---------------- | --------------------------- |
+| BitLocker        | Data encryption             |
+| Windows Defender | Endpoint protection         |
+| Group Policy     | Centralized administration  |
+| SELinux          | Access control              |
+| Tripwire         | File integrity monitoring   |
+| Wazuh            | Log analysis and monitoring |
+| Snort            | Network intrusion detection |
+| Sysmon           | Windows event monitoring    |
+
+
+These controls were selected using a risk-based approach to improve visibility and protection across the environment.
+
+Compliance Alignment
+
+This project supports:
+
+NIST Cybersecurity Framework
+ISO 27001
+HIPAA
+GDPR
+SOC 2
+Key Deliverables
+Security Governance Framework
+Security Architecture Overview
+Security Policy Strategy
+Security Controls Matrix
+Skills Demonstrated
+Governance
+Security policy development
+Security program management
+Risk Management
+Risk identification
+Control selection
+Compliance
+Regulatory alignment
+Audit readiness
+Security Operations
+Monitoring strategy
+Incident response planning
+Project Outcome
+
+Established a governance framework that improves security visibility, supports compliance objectives, and strengthens operational resilience for a hybrid cloud environment.
