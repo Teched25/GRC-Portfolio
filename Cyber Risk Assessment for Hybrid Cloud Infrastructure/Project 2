@@ -1,0 +1,371 @@
+# Cyber Risk Assessment for Hybrid Cloud Infrastructure
+
+## Executive Summary
+
+Conducted a cyber risk assessment for Unidad Web, a cloud services provider supporting more than 5,000 clients across the eastern United States. 
+The organization operates a hybrid environment consisting of Windows, UNIX, Linux, cloud platforms, VPN infrastructure, and externally hosted business services. 
+The purpose of this assessment was to identify cyber risks, evaluate business impact, prioritize threats, and recommend mitigation controls. 
+
+---
+
+# Business Context
+
+Unidad Web provides:
+
+- Website hosting
+- Email services
+- Content management systems
+- Secure cloud storage
+
+The organization manages sensitive customer information for healthcare providers, financial institutions, and small businesses. As a result, the organization faces significant cybersecurity, operational, and compliance risks.
+
+---
+
+# Infrastructure Overview
+
+## Environment Assets
+
+### Windows Infrastructure
+
+- 120 Windows 11 Workstations
+- 15 Windows Server 2022 Systems
+
+### Linux Infrastructure
+
+- 25 Linux Servers
+- Ubuntu
+- CentOS
+
+### UNIX Infrastructure
+
+- 10 UNIX Servers
+- Solaris
+- AIX
+
+### External Dependencies
+
+- AWS S3
+- Microsoft 365
+- GitHub
+- Third-Party APIs
+- VPN Infrastructure
+
+---
+
+# Risk Assessment Methodology
+
+The assessment followed a standard risk management approach:
+
+```text
+Asset Identification
+        │
+        ▼
+Threat Identification
+        │
+        ▼
+Vulnerability Analysis
+        │
+        ▼
+Risk Scoring
+        │
+        ▼
+Control Evaluation
+        │
+        ▼
+Risk Treatment Plan
+```
+
+---
+
+# Enterprise Risk Landscape
+
+## Primary Threats
+
+```text
+                ┌──────────────┐
+                │  Cyber Risk   │
+                └──────┬───────┘
+                       │
+      ┌────────────────┼────────────────┐
+      │                │                │
+      ▼                ▼                ▼
+
+ Ransomware      Data Breach      Insider Threat
+
+      │                │                │
+
+      ▼                ▼                ▼
+
+ Service        Compliance        Privilege
+ Disruption      Violations       Misuse
+
+      │
+      ▼
+
+ Financial Loss
+```
+
+---
+
+# Risk Register
+
+| Risk ID | Risk | Likelihood | Impact | Risk Rating |
+|----------|----------|----------|----------|----------|
+| R-01 | Ransomware Attack | High | Critical | High |
+| R-02 | Data Breach | High | Critical | High |
+| R-03 | Insider Threat | Medium | High | High |
+| R-04 | Service Outage | Medium | High | Medium |
+| R-05 | Unauthorized Access | Medium | High | Medium |
+| R-06 | Malware Infection | High | High | High |
+| R-07 | Privilege Escalation | Medium | High | Medium |
+| R-08 | VPN Compromise | Medium | High | Medium |
+
+Risks were identified based on the organization's infrastructure, business operations, and external connectivity.
+
+---
+
+# Risk Heat Map
+
+```text
+                    IMPACT
+
+              Low   Med   High  Critical
+
+High              [M]   [H]    [H]
+Likelihood
+
+Medium      [L]   [M]   [M]    [H]
+
+Low         [L]   [L]   [M]    [M]
+```
+
+Legend:
+
+- H = High Risk
+- M = Medium Risk
+- L = Low Risk
+
+### High Risks
+
+- Ransomware
+- Data Breach
+- Malware Infection
+- Insider Threat
+
+---
+
+# Risk Analysis Diagram
+
+```text
+Ransomware
+    │
+    ├── Business Interruption
+    ├── Customer Impact
+    ├── Regulatory Exposure
+    └── Financial Loss
+
+Data Breach
+    │
+    ├── HIPAA Violations
+    ├── GDPR Violations
+    ├── Reputation Damage
+    └── Legal Liability
+
+Insider Threat
+    │
+    ├── Unauthorized Changes
+    ├── Data Theft
+    └── Privilege Misuse
+```
+
+---
+
+# Existing Security Controls
+
+## Administrative Controls
+
+- Security Policies
+- Incident Response Procedures
+- Security Awareness Training
+- Role-Based Access Controls
+
+## Technical Controls
+
+- Windows Defender
+- BitLocker
+- Group Policy
+- SELinux
+- AppArmor
+- IPFilter
+- Tripwire
+- Snort
+- Wazuh
+- Sysmon
+
+## Operational Controls
+
+- Vulnerability Management
+- Security Monitoring
+- Log Review
+- Patch Management
+
+【1-1fdc90】
+
+---
+
+# Risk-to-Control Matrix
+
+| Risk | Mitigating Controls |
+|--------|--------|
+| Ransomware | Defender, MFA, Patch Management |
+| Data Breach | BitLocker, Wazuh, MFA |
+| Insider Threat | Group Policy, RBAC, Wazuh |
+| Unauthorized Access | MFA, VPN, TCP Wrappers |
+| Service Outage | Monitoring, Incident Response |
+| Malware | Defender, ClamAV, Snort |
+| Privilege Escalation | SELinux, AppArmor, Wazuh |
+
+---
+
+# Control Strategy Diagram
+
+```text
+                  RISK
+
+                    │
+
+                    ▼
+
+          Security Controls
+
+                    │
+
+ ┌──────────┬──────────┬───────────┐
+
+ ▼          ▼          ▼
+
+Prevent   Detect     Respond
+
+MFA       Wazuh      Incident
+BitLocker Snort      Response
+Defender  Sysmon     Recovery
+
+                    │
+
+                    ▼
+
+            Reduced Risk
+```
+
+---
+
+# Recommended Risk Treatment Plan
+
+## High-Risk Items
+
+### Ransomware
+
+Recommended Actions:
+
+- Strengthen endpoint protection
+- Implement continuous monitoring
+- Enforce timely patch management
+- Conduct backup testing
+
+### Data Breach
+
+Recommended Actions:
+
+- Expand MFA deployment
+- Encrypt sensitive data
+- Increase security monitoring
+- Improve access reviews
+
+### Insider Threat
+
+Recommended Actions:
+
+- Strengthen role-based access control
+- Implement privileged access management
+- Increase logging and monitoring
+
+---
+
+# Risk Dashboard
+
+```text
+HIGH RISKS
+██████████████████ 4
+
+MEDIUM RISKS
+████████████ 4
+
+LOW RISKS
+██ 0
+```
+
+---
+
+# Compliance Considerations
+
+This assessment supports:
+
+- NIST Cybersecurity Framework
+- ISO 27001
+- HIPAA
+- GDPR
+- SOC 2
+
+The identified controls and treatment strategies help improve regulatory compliance and audit readiness.
+
+---
+
+# Key Deliverables
+
+✅ Enterprise Risk Register
+
+✅ Risk Heat Map
+
+✅ Risk Scoring Model
+
+✅ Risk Treatment Plan
+
+✅ Risk-to-Control Mapping
+
+✅ Executive Risk Report
+
+---
+
+# Skills Demonstrated
+
+## Risk Management
+
+- Risk Assessment
+- Risk Prioritization
+- Risk Scoring
+- Risk Treatment Planning
+
+## Governance
+
+- Security Governance
+- Business Risk Analysis
+- Control Selection
+
+## Compliance
+
+- NIST CSF Alignment
+- ISO 27001 Alignment
+- Audit Readiness
+
+## Security Operations
+
+- Security Monitoring
+- Threat Identification
+- Control Effectiveness Evaluation
+
+---
+
+# Key Outcome
+
+Identified and prioritized critical cybersecurity risks affecting a hybrid cloud environment and developed a risk treatment strategy aligned with organizational objectives, 
+compliance requirements, and security best practices. 
