@@ -1,83 +1,101 @@
-Operating System Security Governance Program for Unidad Web
-Executive Summary
+# Operating System Security Governance Program for Unidad Web
 
-Developed a security governance program for Unidad Web, a cloud services provider supporting more than 5,000 customers. 
-The project focused on improving security controls, reducing cyber risk, and supporting compliance requirements across Windows, UNIX, and Linux environments.
+## Executive Summary
 
-Business Problem
+Designed an enterprise security governance program for Unidad Web, a cloud services provider supporting more than 5,000 clients.
 
-Unidad Web stores and processes sensitive customer information and faces risks such as:
+The environment includes Windows, UNIX, and Linux systems supporting website hosting, cloud storage, email services, and business applications.
 
-Ransomware
-Data breaches
-Insider threats
-Service outages
-Unauthorized access
+This project focused on strengthening security governance, improving risk management, and supporting compliance requirements.
 
-These risks could affect business operations and regulatory compliance.
+---
 
-Project Objectives
-Improve system security
-Establish governance processes
-Strengthen monitoring capabilities
-Support regulatory compliance
-Reduce operational risk
-Environment Overview
-Infrastructure
-120 Windows 11 workstations
-15 Windows Servers
-25 Linux Servers
-10 UNIX Servers
-AWS Cloud Services
-Microsoft 365
-VPN Infrastructure
-Security Architecture
+## Business Problem
 
-Network diagram:
+Unidad Web faces several cybersecurity risks:
 
-The environment includes a DMZ, firewall, internal LAN, VPN gateway, and external cloud services.
+- Ransomware
+- Data breaches
+- Insider threats
+- Service outages
+- Unauthorized access
 
-| Control          | Purpose                     |
-| ---------------- | --------------------------- |
-| BitLocker        | Data encryption             |
-| Windows Defender | Endpoint protection         |
-| Group Policy     | Centralized administration  |
-| SELinux          | Access control              |
-| Tripwire         | File integrity monitoring   |
-| Wazuh            | Log analysis and monitoring |
-| Snort            | Network intrusion detection |
-| Sysmon           | Windows event monitoring    |
+These risks could impact customer data and business operations.
 
+---
 
-These controls were selected using a risk-based approach to improve visibility and protection across the environment.
+## Security Architecture
 
-Compliance Alignment
+The environment includes:
 
-This project supports:
+- 120 Windows 11 Workstations
+- 15 Windows Server 2022 Systems
+- 25 Linux Servers
+- 10 UNIX Servers
+- AWS Cloud Services
+- Microsoft 365
+- VPN Infrastructure
 
-NIST Cybersecurity Framework
-ISO 27001
-HIPAA
-GDPR
-SOC 2
-Key Deliverables
-Security Governance Framework
-Security Architecture Overview
-Security Policy Strategy
-Security Controls Matrix
-Skills Demonstrated
-Governance
-Security policy development
-Security program management
-Risk Management
-Risk identification
-Control selection
-Compliance
-Regulatory alignment
-Audit readiness
-Security Operations
-Monitoring strategy
-Incident response planning
-Project Outcome
+### Network Diagram
 
-Established a governance framework that improves security visibility, supports compliance objectives, and strengthens operational resilience for a hybrid cloud environment.
+Security-Architecture-Diagram.png
+
+---
+
+## Security Controls
+
+| Control | Purpose |
+|----------|----------|
+| BitLocker | Data Encryption |
+| Windows Defender | Endpoint Protection |
+| Group Policy | Security Administration |
+| Tripwire | File Integrity Monitoring |
+| Wazuh | SIEM Monitoring |
+| Snort | Intrusion Detection |
+| Sysmon | Event Monitoring |
+| MFA | Secure Authentication |
+
+---
+
+## Compliance Alignment
+
+- NIST Cybersecurity Framework
+- ISO 27001
+- HIPAA
+- GDPR
+- SOC 2
+
+---
+
+## Deliverables
+
+- Security Governance Framework
+- Security Policy Strategy
+- Security Control Matrix
+- Security Architecture Overview
+
+---
+
+## Skills Demonstrated
+
+### Governance
+- Security Policy Development
+- Security Program Management
+
+### Risk Management
+- Risk Identification
+- Control Selection
+
+### Compliance
+- NIST Alignment
+- ISO 27001 Alignment
+
+### Security Operations
+- Monitoring Strategy
+- Incident Response Planning
+
+---
+
+## Key Outcome
+
+Implemented a governance framework designed to improve security visibility, compliance readiness, and organizational resilience.
