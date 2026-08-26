@@ -1,0 +1,450 @@
+# Enterprise Threat Detection Strategy
+
+## Executive Summary
+
+Designed an enterprise threat detection and monitoring strategy for Unidad Web, a cloud services provider supporting more than 5,000 customers. The strategy uses layered security monitoring across Windows, Linux, UNIX, cloud services, and network infrastructure to improve threat visibility, accelerate incident detection, and reduce organizational risk. 【1-9a6e2a】
+
+---
+
+# Business Overview
+
+## Organization
+
+Unidad Web provides:
+
+- Website Hosting
+- Email Services
+- Content Management Systems
+- Secure Cloud Storage
+
+The organization supports healthcare providers, financial institutions, and small businesses that rely on secure and continuous access to sensitive information. 【1-9a6e2a】
+
+---
+
+# Security Monitoring Objectives
+
+## Primary Goals
+
+- Detect malicious activity early
+- Improve visibility across all systems
+- Reduce dwell time
+- Support incident response
+- Strengthen compliance readiness
+- Reduce operational risk
+
+---
+
+# Infrastructure Overview
+
+## Monitored Systems
+
+```text
+Windows Environment
+│
+├── Windows 11 Workstations
+└── Windows Servers
+
+Linux Environment
+│
+├── Ubuntu Servers
+└── CentOS Servers
+
+UNIX Environment
+│
+├── Solaris
+└── AIX
+
+Cloud Services
+│
+├── AWS
+├── Microsoft 365
+└── GitHub
+
+Remote Access
+│
+└── VPN Gateway
+```
+
+【1-9a6e2a】
+
+---
+
+# Threat Detection Architecture
+
+## Enterprise Monitoring Architecture
+
+```text
+                     Internet
+                         │
+                         ▼
+                     Firewall
+                         │
+                         ▼
+                      Snort
+                         │
+                         ▼
+              ┌─────────────────┐
+              │ Network Events  │
+              └─────────────────┘
+                         │
+                         ▼
+
+      ┌───────────────────────────────────┐
+      │               Wazuh               │
+      │         Central SIEM Layer        │
+      └───────────────────────────────────┘
+               ▲              ▲
+               │              │
+
+      ┌────────┘              └─────────┐
+      ▼                                ▼
+
+ Windows Systems                Linux / UNIX
+
+ Sysmon                        Tripwire
+ Defender                      Log Sources
+ Event Logs                    Audit Logs
+
+      ▼                                ▼
+      └──────────────┬─────────────────┘
+                     ▼
+
+                Security Team
+                     │
+                     ▼
+
+            Incident Response
+```
+
+---
+
+# Security Monitoring Strategy
+
+## Layer 1: Network Monitoring
+
+### Tool
+
+**Snort**
+
+### Purpose
+
+Provides network intrusion detection and prevention capabilities.
+
+### Detects
+
+- Port scans
+- Buffer overflow attacks
+- Malware traffic
+- Unauthorized connection attempts
+- Known exploitation signatures
+
+### Monitoring Flow
+
+```text
+Network Traffic
+       │
+       ▼
+     Snort
+       │
+       ▼
+Security Alerts
+       │
+       ▼
+     Wazuh
+       │
+       ▼
+     SOC Team
+```
+
+【1-9a6e2a】
+
+---
+
+# Layer 2: Host Monitoring
+
+## Tool
+
+**Wazuh**
+
+### Purpose
+
+Provides centralized visibility across all operating systems.
+
+### Detects
+
+- File tampering
+- Privilege escalation
+- Rootkits
+- Unauthorized logins
+- Policy violations
+
+### Monitoring Flow
+
+```text
+Host Activity
+      │
+      ▼
+    Wazuh Agent
+      │
+      ▼
+   Log Collection
+      │
+      ▼
+  Correlation Engine
+      │
+      ▼
+ Security Alerts
+```
+
+【1-9a6e2a】
+
+---
+
+# Layer 3: Windows Security Monitoring
+
+## Tool
+
+**Sysmon**
+
+### Purpose
+
+Provides detailed visibility into Windows system activity.
+
+### Detects
+
+- Process injection
+- PowerShell abuse
+- Encoded command execution
+- Lateral movement
+- Suspicious process creation
+
+### Monitoring Flow
+
+```text
+Process Execution
+        │
+        ▼
+
+      Sysmon
+
+        │
+        ▼
+
+ Windows Logs
+
+        │
+        ▼
+
+      Wazuh
+
+        │
+        ▼
+
+ Security Alerts
+```
+
+【1-9a6e2a】
+
+---
+
+# Security Coverage Map
+
+```text
+Threat Type                    Detection Tool
+
+Malware                        Snort
+Malware                        Wazuh
+Malware                        Sysmon
+
+Unauthorized Access            Wazuh
+
+Privilege Escalation           Wazuh
+
+Suspicious Login Activity      Wazuh
+
+File Modification              Wazuh
+File Modification              Tripwire
+
+PowerShell Abuse               Sysmon
+
+Lateral Movement               Sysmon
+
+Port Scanning                  Snort
+
+Network Exploitation           Snort
+
+Rootkit Activity               Wazuh
+```
+
+---
+
+# Threat Detection Matrix
+
+| Threat | Snort | Wazuh | Sysmon |
+|----------|----------|----------|----------|
+| Malware | ✅ | ✅ | ✅ |
+| Port Scans | ✅ | ❌ | ❌ |
+| Rootkits | ❌ | ✅ | ❌ |
+| File Tampering | ❌ | ✅ | ❌ |
+| Privilege Escalation | ❌ | ✅ | ✅ |
+| Unauthorized Access | ✅ | ✅ | ❌ |
+| PowerShell Abuse | ❌ | ❌ | ✅ |
+| Lateral Movement | ❌ | ❌ | ✅ |
+
+【1-9a6e2a】
+
+---
+
+# Threat Intelligence Integration
+
+## Recommended Enhancement
+
+### Cyble Vision
+
+Purpose:
+
+- Dark web monitoring
+- Threat intelligence
+- Vulnerability tracking
+- Attack surface visibility
+- Threat actor monitoring
+
+### Intelligence Workflow
+
+```text
+External Threat Intelligence
+             │
+             ▼
+
+         Cyble
+
+             │
+             ▼
+
+ Emerging Threats
+
+             │
+             ▼
+
+ Detection Rules
+
+             │
+             ▼
+
+ Snort / Wazuh / SOC
+```
+
+【1-9a6e2a】
+
+---
+
+# Security Operations Workflow
+
+```text
+Threat Activity
+       │
+       ▼
+
+Detection Tools
+       │
+       ▼
+
+Event Collection
+       │
+       ▼
+
+Wazuh SIEM
+       │
+       ▼
+
+Alert Prioritization
+       │
+       ▼
+
+Security Analyst Review
+       │
+       ▼
+
+Incident Response
+       │
+       ▼
+
+Recovery & Lessons Learned
+```
+
+---
+
+# Detection Use Cases
+
+## Use Case 1: Ransomware Detection
+
+Detection Sources:
+
+- Sysmon
+- Wazuh
+- Defender
+
+Indicators:
+
+- Mass file modifications
+- Suspicious PowerShell execution
+- Unauthorized encryption activity
+
+---
+
+## Use Case 2: Unauthorized Access
+
+Detection Sources:
+
+- Wazuh
+- VPN Logs
+- Windows Logs
+
+Indicators:
+
+- Failed login spikes
+- Login anomalies
+- Privilege abuse
+
+---
+
+## Use Case 3: Malware Activity
+
+Detection Sources:
+
+- Snort
+- Defender
+- Wazuh
+
+Indicators:
+
+- Known malicious signatures
+- Command-and-control traffic
+- Malicious file execution
+
+---
+
+# Compliance Benefits
+
+Supports:
+
+- NIST Cybersecurity Framework
+- ISO 27001
+- HIPAA
+- SOC 2
+- GDPR
+
+Monitoring activities improve audit readiness, incident response capabilities, and security governance. 【1-9a6e2a】
+
+---
+
+# Security Monitoring Dashboard
+
+```text
+THREAT COVERAGE
+
+Network Detection         ██████████ 100%
+
+Host Monitoring           ██████████ 100%
+
+Windows Monitoring
