@@ -1,0 +1,467 @@
+# NIST Cybersecurity Framework Gap Analysis
+
+## Executive Summary
+
+Conducted a NIST Cybersecurity Framework (CSF) assessment for Unidad Web, a cloud services provider operating a hybrid infrastructure consisting of Windows, UNIX, and Linux systems.
+
+The objective was to evaluate existing security controls, measure framework alignment, identify security gaps, and create a remediation roadmap to improve organizational cybersecurity maturity.
+
+---
+
+# Organization Overview
+
+Unidad Web provides:
+
+- Website Hosting
+- Email Services
+- Content Management Systems
+- Secure Cloud Storage
+
+The company supports over 5,000 customers and manages sensitive information requiring strong cybersecurity governance and compliance practices.
+
+---
+
+# Assessment Scope
+
+## In-Scope Systems
+
+### Windows Environment
+
+- Windows 11 Workstations
+- Windows Server 2022
+
+### Linux Environment
+
+- Ubuntu Servers
+- CentOS Servers
+
+### UNIX Environment
+
+- Solaris
+- AIX
+
+### Cloud Services
+
+- AWS S3
+- Microsoft 365
+- GitHub
+- VPN Infrastructure
+
+【1-992526】
+
+---
+
+# Assessment Methodology
+
+```text
+Asset Inventory
+       │
+       ▼
+Control Review
+       │
+       ▼
+NIST CSF Mapping
+       │
+       ▼
+Gap Identification
+       │
+       ▼
+Risk Assessment
+       │
+       ▼
+Remediation Roadmap
+```
+
+---
+
+# Current Security Controls
+
+## Existing Security Capabilities
+
+| Control | Technology |
+|----------|------------|
+| Endpoint Protection | Windows Defender |
+| Encryption | BitLocker |
+| Policy Enforcement | Group Policy |
+| Intrusion Detection | Snort |
+| Log Monitoring | Wazuh |
+| Event Logging | Sysmon |
+| File Integrity Monitoring | Tripwire |
+| Access Control | SELinux |
+| Remote Access Security | VPN |
+
+【1-992526】
+
+---
+
+# NIST CSF Overview
+
+```text
+NIST Cybersecurity Framework
+
+    IDENTIFY
+        │
+        ▼
+
+    PROTECT
+        │
+        ▼
+
+    DETECT
+        │
+        ▼
+
+    RESPOND
+        │
+        ▼
+
+    RECOVER
+```
+
+---
+
+# NIST CSF Mapping
+
+## IDENTIFY
+
+### Existing Controls
+
+✅ Asset inventory exists
+
+✅ Infrastructure documented
+
+✅ Risk awareness documented
+
+### Gaps Identified
+
+⚠ Formal asset classification process missing
+
+⚠ Vendor risk management process not fully documented
+
+⚠ Data classification standards need improvement
+
+### Maturity Rating
+
+```text
+IDENTIFY
+████████░░ 80%
+```
+
+---
+
+## PROTECT
+
+### Existing Controls
+
+✅ BitLocker
+
+✅ MFA
+
+✅ Group Policy
+
+✅ VPN
+
+✅ Defender
+
+✅ SELinux
+
+### Gaps Identified
+
+⚠ Formal Privileged Access Management solution
+
+⚠ Enhanced security awareness metrics
+
+⚠ Data Loss Prevention controls
+
+### Maturity Rating
+
+```text
+PROTECT
+█████████░ 90%
+```
+
+---
+
+## DETECT
+
+### Existing Controls
+
+✅ Wazuh
+
+✅ Sysmon
+
+✅ Snort
+
+✅ Tripwire
+
+### Gaps Identified
+
+⚠ Threat intelligence integration
+
+⚠ Advanced UEBA capabilities
+
+⚠ Automated threat correlation
+
+### Maturity Rating
+
+```text
+DETECT
+████████░░ 80%
+```
+
+---
+
+## RESPOND
+
+### Existing Controls
+
+✅ Incident Response Policy
+
+✅ Escalation Procedures
+
+✅ Monitoring and Logging
+
+### Gaps Identified
+
+⚠ Tabletop exercises
+
+⚠ Incident playbooks
+
+⚠ Automated response workflows
+
+### Maturity Rating
+
+```text
+RESPOND
+███████░░░ 70%
+```
+
+---
+
+## RECOVER
+
+### Existing Controls
+
+✅ Backup Strategy
+
+✅ AWS Storage
+
+✅ Recovery Procedures
+
+### Gaps Identified
+
+⚠ Disaster Recovery testing schedule
+
+⚠ Recovery metrics (RTO/RPO)
+
+⚠ Business Continuity testing
+
+### Maturity Rating
+
+```text
+RECOVER
+███████░░░ 70%
+```
+
+---
+
+# NIST CSF Gap Matrix
+
+| Function | Current State | Target State | Priority |
+|-----------|--------------|--------------|----------|
+| Identify | Managed | Mature | Medium |
+| Protect | Mature | Optimized | Medium |
+| Detect | Managed | Mature | High |
+| Respond | Developing | Mature | High |
+| Recover | Developing | Mature | High |
+
+---
+
+# Security Maturity Dashboard
+
+```text
+NIST FUNCTION      SCORE
+
+Identify           80%
+
+Protect            90%
+
+Detect             80%
+
+Respond            70%
+
+Recover            70%
+```
+
+---
+
+# Gap Analysis Diagram
+
+```text
+CURRENT STATE
+
+Identify      ████████░░
+
+Protect       █████████░
+
+Detect        ████████░░
+
+Respond       ███████░░░
+
+Recover       ███████░░░
+
+
+TARGET STATE
+
+Identify      ██████████
+
+Protect       ██████████
+
+Detect        ██████████
+
+Respond       ██████████
+
+Recover       ██████████
+```
+
+---
+
+# Remediation Roadmap
+
+## Phase 1 (0-3 Months)
+
+### High Priority
+
+- Formal asset classification
+- Incident response playbooks
+- Disaster recovery documentation
+
+---
+
+## Phase 2 (3-6 Months)
+
+### Medium Priority
+
+- Threat intelligence integration
+- Vendor risk management framework
+- Recovery testing procedures
+
+---
+
+## Phase 3 (6-12 Months)
+
+### Strategic Initiatives
+
+- User and Entity Behavior Analytics (UEBA)
+- Data Loss Prevention
+- Security Automation
+- Continuous Control Monitoring
+
+---
+
+# Compliance Benefits
+
+The recommended improvements support:
+
+- NIST Cybersecurity Framework
+- ISO 27001
+- HIPAA
+- GDPR
+- SOC 2
+
+
+
+---
+
+# Before and After View
+
+```text
+CURRENT MATURITY
+
+Identify      80%
+Protect       90%
+Detect        80%
+Respond       70%
+Recover       70%
+
+OVERALL       78%
+
+
+TARGET MATURITY
+
+Identify      100%
+Protect       100%
+Detect        100%
+Respond       100%
+Recover       100%
+
+OVERALL       100%
+```
+
+---
+
+# Key Findings
+
+## Strengths
+
+- Strong endpoint security
+- Good encryption coverage
+- Effective monitoring tools
+- Established security policies
+
+## Areas for Improvement
+
+- Incident response maturity
+- Disaster recovery testing
+- Vendor risk management
+- Threat intelligence integration
+
+---
+
+# Deliverables
+
+✅ NIST CSF Assessment
+
+✅ Gap Analysis Report
+
+✅ Security Maturity Scorecard
+
+✅ Control Mapping Matrix
+
+✅ Remediation Roadmap
+
+✅ Executive Summary
+
+---
+
+# Skills Demonstrated
+
+## Governance
+
+- Security Framework Assessment
+- Cybersecurity Governance
+- Policy Evaluation
+
+## Risk Management
+
+- Risk Identification
+- Gap Analysis
+- Risk Prioritization
+
+## Compliance
+
+- NIST Cybersecurity Framework
+- ISO 27001 Mapping
+- Audit Readiness
+
+## Security Strategy
+
+- Security Roadmapping
+- Security Maturity Assessment
+- Control Optimization
+
+---
+
+# Key Outcome
+
+Evaluated organizational cybersecurity controls against the NIST Cybersecurity Framework, identified key maturity gaps, and developed a strategic remediation roadmap designed to improve security posture, compliance readiness, and cyber resilience across a hybrid enterprise environment. 
